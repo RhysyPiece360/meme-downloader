@@ -10,7 +10,7 @@ if not os.path.exists('memes'):
 num_memes = int(input('How many memes do you want to download? '))
 
 for i in range(num_memes):
-    sleep(2)
+    time.sleep(2)
     # Make a GET request to the API endpoint
     response = requests.get('https://meme-api.com/gimme')
 
