@@ -1,7 +1,7 @@
 import requests
 import os
 import random
-
+import time
 # Create a folder to save the memes if it doesn't already exist
 if not os.path.exists('memes'):
     os.makedirs('memes')
@@ -10,6 +10,7 @@ if not os.path.exists('memes'):
 num_memes = int(input('How many memes do you want to download? '))
 
 for i in range(num_memes):
+    sleep(2)
     # Make a GET request to the API endpoint
     response = requests.get('https://meme-api.com/gimme')
 
